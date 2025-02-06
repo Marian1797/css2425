@@ -1,0 +1,17 @@
+div {
+    border: 4px;
+    color: blue;
+    text-align: center;
+    background-color:red;
+    border: 4px green solid;
+    padding: 25px;
+
+}
+div>div {
+    background-color: yellow;
+    color: brown;
+}
+div>div>div {
+    background-color: blueviolet;
+    color: aquamarine;
+}

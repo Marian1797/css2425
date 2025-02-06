@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            color: blue;
+        }
+        .demo2{
+            color: blueviolet;
+            font-weight: bolder;
+            font-stretch: normal;
+        }
+    </style>
+</head>
+<body>
+    <button id="apasa">Schimba culoarea</button>
+    <button id="apasa2">Schimba div</button>
+    <button id="apasa3">Schimba demo</button>
+    <div id="para">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, corrupti! Officiis cum ullam vero illum?</p>
+        <p>Tenetur tempora voluptates esse quasi nobis omnis voluptatibus repellat aperiam voluptatum quod veniam, dolore temporibus?</p>
+        <p>Recusandae impedit corporis reprehenderit laudantium quia alias facilis, sunt accusantium, et quaerat dolor pariatur earum.</p>
+        <p>Harum natus aliquid vitae expedita, officiis quod itaque illo aut error beatae aspernatur soluta sit?</p>
+        <p>Possimus, sapiente cum. Asperiores quam eos cupiditate qui odio reprehenderit pariatur debitis, excepturi quo ex?</p>
+        <p>Minima odit est hic, quidem omnis explicabo. Repudiandae unde expedita, sed tenetur hic officiis neque?</p>
+        <p>Beatae iusto eaque a laudantium vitae, earum saepe tempore voluptates illo minima architecto quod at!</p>
+        <p>Natus, reprehenderit facilis pariatur maxime sequi, minima necessitatibus culpa modi nulla, aliquam velit. Nemo, cum?</p>
+        <p>Sed odit ad tempore dignissimos facilis vel eveniet odio dolore aliquam illo, ipsum, repellendus ea.</p>
+        <p>Eveniet quod rem debitis, dignissimos et quas at animi, recusandae velit excepturi nostrum nisi laboriosam?</p>
+        <h2>Lista</h2>
+    </div>
+
+
+    <p class="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid hic nesciunt facere dolore quia praesentium!</p>
+    <p class="demo">Optio incidunt aliquam modi, tenetur quibusdam voluptates repellat neque recusandae quos magni corporis cumque labore?</p>
+    <p class="demo">Animi voluptatum quis sunt tempora sint hic eos perferendis ut velit? Perspiciatis veritatis veniam fuga.</p>
+    <p class="demo">Sequi dignissimos fugit at obcaecati non dolorem cum dolor architecto. Esse, enim? Praesentium, molestiae maxime!</p>
+
+    <script>
+        let btn=document.getElementById('apasa');
+        let p=document.getElementsByTagName('p');
+        let btn2= document.getElementById('apasa2');
+        let div= document.getElementById('para');
+        let btn3= document.getElementById('apasa3');
+        let paraDemo = document.getElementsByClassName('demo');
+        btn.addEventListener('click',function(){
+            let arry=[...p];
+            arry.forEach((element) =>{
+               element.style.color='red';
+               element.style.fontSize='34px';
+            
+        })
+    })
+        btn2.addEventListener('click',function(){
+            div.style.cssText='border: 1px 3px 4px 4px;font-size:20px;backgorund-color= green;text-align: center';
+        
+        })
+        btn3.addEventListener('click',function(){
+            let myArr=[...paraDemo];
+            myArr.forEach(element => {
+                element.classList.toggle('demo2');
+            });
+        })
+       
+        
+    </script>
+</body>
+</html>

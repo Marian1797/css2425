@@ -1,0 +1,19 @@
+a:hover{
+    color: brown;
+    font-size: 20px;
+}
+a:visited{
+    color: blueviolet;
+    font-size: 55px;
+}
+input:focus{
+    border: 5px red solid;
+    outline: none;
+}
+
+p::first-letter{
+    text-transform: uppercase;
+}
+/* p::before{
+    content:'-'
+} */
