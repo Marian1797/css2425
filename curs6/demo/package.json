@@ -1,0 +1,22 @@
+{
+  "name": "primul-meu-proiect",
+  "version": "2.2.1",
+  "description": "Primul meu proiect nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "vanilajs"
+  ],
+  "author": "Enache Marian",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.85.1"
+  },
+  "devDependencies": {
+    "less": "^4.2.2"
+  }
+}
